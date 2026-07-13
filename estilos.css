@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset CSS*/
+
+html, body, div, a, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Importando Fuentes de Texto*/
+
+.pliant-font {
+  font-family: "Pliant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.source-serif-4 {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/*Definiendo algunos Parámetros*/
+
+section {
+	margin: 20px;
+	display: flex;
+}
+
+div {
+	margin: 20px;
+	font-family: 'Source Serif 4';
+	line-height: 1.5;
+}
+
+a {
+	font-family: 'Source Serif 4';
+	margin: 20px;
+}
+
+/*Barra Superior de Navegación*/
+
+nav {
+	display: block;
+	text-align: right;
+	padding-bottom: 10px;
+	margin: 20px;
+	border-bottom: 2px solid blue;
+	/*Flexbox Properties*/
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 1;
+	justify-content: flex-end;
+}
+
+a {
+	margin: 10px;
+	text-decoration: underline;
+	text-decoration-color: darkblue;
+	font-size: large;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Bloque de Nombre y Foto*/
+
+.titulo{
+	/*Declaración de Variables*/
+	/*Declaración de Features*/
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	flex-wrap: wrap;
+	background-color: beige;
+	justify-content: center;
+}
+
+.foto{
+	/* Box Characteristics */
+	margin: 20px;
+	width: 15vw;
+	height: 15vw;
+	/* Image Characteristics */
+	background-image: url('45c91684-1a85-4db6-aed7-fcdfc48f8bec.JPG');
+	background-size: cover;
+	border-radius: 50%;
+	background-position: center;
+	/* Flex Characteristics */
+	justify-content: center;
+}
+
+.nombre {
+	display: block;
+	line-height: 1;
+	margin: 20px;
+	font-size: 8vw;
+	color:darkblue;
+	font-family: Pliant;
+	/*Flex Characteristics */
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+}
+
+/* Bloque de Botón de Navegación */
+
+.boton {
+	display: none;
+}
+
+@media screen and (max-width: 575px) {
+	nav{
+		display: none;
+	}
+	.boton {
+		display: block;
+		width: fit-content;
+		margin: 20px;
+		border: 10px solid rgb(17, 0, 255);
+		border-radius: 10%;
+		padding: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+}
+
+/* Bloque sobre mi Educación */
+
+.seccion {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: cadetblue;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contenido {
+	width: calc(100% - 20vw - 85px);
+	background-color: aliceblue;
+}
+
+.foto2 {
+	width: 20vw;
+	height: 15vw;
+	background-image: url('45c91684-1a85-4db6-aed7-fcdfc48f8bec.JPG');
+	background-size: cover;
+	border-radius: 50%;
+	background-position: center;
+	border: 3px solid red;
+}
