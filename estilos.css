@@ -105,7 +105,8 @@ a {
 	text-decoration: underline;
 	text-decoration-color: darkblue;
 	font-size: large;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Source Serif 4';
+	margin: 0px;
 }
 
 /*Bloque de Nombre y Foto*/
@@ -117,7 +118,6 @@ a {
 	flex-direction: row;
 	margin: 20px;
 	flex-wrap: wrap;
-	background-color: beige;
 	justify-content: center;
 }
 
@@ -169,19 +169,24 @@ a {
 	}
 }
 
-/* Bloque sobre mi Educación */
+/* Bloques de Contenido */
 
 .seccion {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: cadetblue;
 	align-items: center;
 	justify-content: space-between;
 }
 
+.subtitulo {
+	font-family: 'Source Serif 4';
+	font-weight: 800;
+	margin-left: 0px;
+	color:darkblue;
+}
+
 .contenido {
 	width: calc(100% - 20vw - 85px);
-	background-color: aliceblue;
 }
 
 .foto2 {
